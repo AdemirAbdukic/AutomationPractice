@@ -1,8 +1,8 @@
 const {PlaywrightTestConfig} = require('@playwright/test');
 
 const config = {
-    retries: 1,
-    timeout: 10000,
+    retries: 2,
+    timeout: 30000,
     use: {
         headless: false,
         viewport: {width: 1280, height: 720},
