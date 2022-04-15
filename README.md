@@ -1,7 +1,7 @@
 # Automation Practice
 
 ## Project description
-This is a test project that contains a few smoke tests automated in Node.js using Playwright and Visual Studio Code. It is based on the website `http://automationpractice.com/index.php`.
+This is a test project that contains a few smoke tests automated in Playwright, using JavaScript and Visual Studio Code. It is based on the website `http://automationpractice.com/index.php`.
 Tests that are automated are:
 - Login with valid credentials (`smoke_login.spec.js`)
 - Adding to cart from search results (`smoke_addcart.spec.js`)
