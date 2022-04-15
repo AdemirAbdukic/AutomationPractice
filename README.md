@@ -8,7 +8,7 @@ Tests that are automated are:
 - Checkout when user is logged in and has product already in cart (`smoke_checkout.spec.js`)
 
 I added a project configuration file (`playwright.config.js`) with setup for different browsers. Scripts for running them in the tests are in `package.json` file. \
-There are three .yml workflows files (`chrome-run.yml`, `safari-run.yml`, `test-run.yml`) using different browsers to run the project on GitHub. They are in folder .github/workflows.
+There are three .yml workflows files (`chrome-run.yml`, `safari-run.yml`, `test-run.yml`) using different browsers to run the project on GitHub. They are in folder .github/workflows. I have used `https://playwright.dev/docs/ci` for reference.
 
 I have used `https://temp-mail.org/en/` email address generator to generate an email for user.
 
