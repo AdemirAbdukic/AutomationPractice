@@ -12,7 +12,6 @@ test.beforeEach(async ({page}) => {
 })
 
 test('Checkout', async ({page}) => {
-    await page.pause();
     await expect(page).toHaveURL('http://automationpractice.com/index.php?controller=order');
     await page.locator('//a[@class="button btn btn-default standard-checkout button-medium"]').click();
     await expect(page).toHaveURL('http://automationpractice.com/index.php?controller=order&step=1');
