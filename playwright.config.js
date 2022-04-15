@@ -2,10 +2,11 @@ const {PlaywrightTestConfig} = require('@playwright/test');
 
 const config = {
     reporter: [ ['html', { open: 'never' }] ],
-    retries: 2,
-    timeout: 30000,
+    retries: 1,
+    timeout: 20000,
     use: {
-        headless: true,
+        baseURL: "http://automationpractice.com/index.php",
+        headless: false,
         viewport: {width: 1280, height: 720},
         video: "off",
         screenshot: "only-on-failure"

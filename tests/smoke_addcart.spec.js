@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 
 test('Add to cart', async ({ page }) => {
-  await page.goto('http://automationpractice.com/index.php');
+  await page.goto('');
   await page.locator('#search_query_top').fill("Faded Short Sleeve T-shirts");
   await page.locator('//button[@class="btn btn-default button-search"]').click();
   await expect(page).toHaveURL('http://automationpractice.com/index.php?controller=search&orderby=position&orderway=desc&search_query=Faded+Short+Sleeve+T-shirts&submit_search=');
