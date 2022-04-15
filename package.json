@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:chrome": "npx playwright test --config=playwright.config.js --project=Chrome",
+    "test:firefox": "npx playwright test --config=playwright.config.js --project=Firefox",
+    "test:webkit": "npx playwright test --config=playwright.config.js --project=Webkit"
   },
   "author": "Ademir Abdukić",
   "license": "ISC",
