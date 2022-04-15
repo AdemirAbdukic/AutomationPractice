@@ -1,12 +1,12 @@
 const {test, expect} = require('@playwright/test');
 
 test.beforeEach(async ({page}) => {
+    await page.pause();
     await page.goto('?controller=authentication&back=my-account');
     await page.locator('#email').fill('todov80574@eosbuzz.com');
     await page.locator('#passwd').fill('tester');
     await page.locator('#SubmitLogin').click();
-    await page.goto('');
-    await page.locator('//div/a[@title="Faded Short Sleeve T-shirts"]').first().click();
+    await page.goto('?id_product=1&controller=product');
     await page.locator('//button[@class="exclusive"]').click();
     await page.locator('//span[@class="cross"]').click();
     await page.goto('?controller=order');
