@@ -25,5 +25,5 @@ Prerequisites for running the tests locally are:
 - Installed Node.js
 - Installed Visual Studio Code
 
-To run the tests locally, clone the repository to the local folder in Visual Studio Code.\
+To run the tests locally, clone the GitHub repository to the local folder in Visual Studio Code.\
 In the VSC terminal run the command `npm run test:selectedBrowser` where `selectedBrowser` can be `firefox`, `chrome`, or `webkit` (used for Safari).
