@@ -3,7 +3,7 @@ const {PlaywrightTestConfig} = require('@playwright/test');
 const config = {
     reporter: [ ['html', { open: 'never' }] ],
     retries: 1,
-    timeout: 20000,
+    timeout: 30000,
     use: {
         baseURL: "http://automationpractice.com/index.php",
         headless: true,
