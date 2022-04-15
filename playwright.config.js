@@ -6,7 +6,7 @@ const config = {
     timeout: 20000,
     use: {
         baseURL: "http://automationpractice.com/index.php",
-        headless: false,
+        headless: true,
         viewport: {width: 1280, height: 720},
         video: "off",
         screenshot: "only-on-failure"
