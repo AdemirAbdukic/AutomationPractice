@@ -1,7 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
 test('Login', async ({ page }) => {
-
   await page.goto('?controller=authentication&back=my-account');
   await page.locator('#email').fill('todov80574@eosbuzz.com');
   await page.locator('#passwd').fill('tester');

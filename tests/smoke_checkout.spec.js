@@ -1,7 +1,7 @@
 const {test, expect} = require('@playwright/test');
 
 test.beforeEach(async ({page}) => {
-    await page.goto('http://automationpractice.com/index.php?controller=authentication&back=my-account');
+    await page.goto('?controller=authentication&back=my-account');
     await page.locator('#email').fill('todov80574@eosbuzz.com');
     await page.locator('#passwd').fill('tester');
     await page.locator('#SubmitLogin').click();
