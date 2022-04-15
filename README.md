@@ -11,3 +11,4 @@ I added a project configuration file, playwright.config.js, with setup for diffe
 There are three .yml workflows (chrome-run.yml, safari-run.yml, test-run.yml) using different browsers to run the project on GitHub. They are in folder .github/workflows. To run the tests in github open Actions, choose the desired workflow, and click on run workflow. 
 
 I have used https://temp-mail.org/en/ email address generator to generate an email for user.
+
