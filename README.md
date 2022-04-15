@@ -7,12 +7,12 @@ Tests that are automated are:
 - Adding to cart from search results (`smoke_addcart.spec.js`)
 - Checkout when the user is logged in and has the product already in the cart (`smoke_checkout.spec.js`)
 
-I added a project configuration file (`playwright.config.js`) with setup for different browsers. Scripts for running them in the tests are in the `package.json` file. \
+I added a project configuration file (`playwright.config.js`) with setup for different browsers and other important parameters for running the tests. Scripts for running them in the tests are in the `package.json` file. \
 There are three .yml workflows files (`chrome-run.yml`, `safari-run.yml`, `test-run.yml`) using different browsers to run the project on GitHub. They are in folder `.github/workflows`. I have used `https://playwright.dev/docs/ci` for reference.
 
 I have used the `https://temp-mail.org/en/` email address generator to generate an email for the user.
 
-There are also xlsx files (`Bug reports.xlsx` and `Test cases.xlsx`) that cover that I added for other parts of the assignment. The can be downloaded and opened in Excel.
+There are also xlsx files (`Bug reports.xlsx` and `Test cases.xlsx`) that I added for other parts of the assignment. The can be downloaded and opened in Excel.
 
 ## Running tests
 
@@ -26,4 +26,4 @@ Prerequisites for running the tests locally are:
 - Installed Visual Studio Code
 
 To run the tests locally, clone the repository to the local folder in Visual Studio Code.\
-In the VSC terminal run the command `npm run test:selectedBrowser` where selectedBrowser can be firefox, chrome, and webkit (used for Safari).
+In the VSC terminal run the command `npm run test:selectedBrowser` where `selectedBrowser` can be `firefox`, `chrome`, or `webkit` (used for Safari).
